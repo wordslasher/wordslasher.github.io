@@ -1,122 +1,370 @@
-<!-- about.html -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WordSlasher – About the App</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7001404297753104"
-     crossorigin="anonymous"></script>
+  <title>WordSlasher | Fund Learning</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#3b82f6',
-            dark: '#1f2937',
+            primary: "#3b82f6",
+            dark: "#1f2937",
           },
         },
       },
     };
   </script>
+
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-white text-gray-800">
 
-  <!-- Header -->
-  <header class="text-center py-16 px-6 bg-white shadow">
-    <h1 class="text-4xl font-bold text-primary mb-4">🌟 WordSlasher – Our Story</h1>
-    <p class="text-lg max-w-3xl mx-auto text-gray-700">Hi! We’re a passionate team of developers and language lovers on a mission to make learning fun, free, and accessible to everyone.</p>
-    <div class="flex justify-center">
-      <iframe class="rounded-xl shadow-lg w-full max-w-4xl h-96" src="https://www.youtube.com/embed/FUGt_7fT4B0" frameborder="0" allowfullscreen></iframe>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg p-4 flex justify-between items-center fixed top-0 w-full z-50">
+    <div class="text-2xl font-bold text-primary">WordSlasher: Fund</div>
+    <div class="space-x-6 hidden md:flex">
+      <a href="#about" class="hover:text-primary">About</a>
+      <a href="app.html" class="hover:text-primary">The App</a>
+      <a href="rewards.html" class="hover:text-primary">Rewards</a>
+      <a href="#fund" class="hover:text-primary font-semibold">Fund</a>
+      
+      <a href="https://wordslasher.github.io/game/" class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Play the Game</a>
+
     </div>
-  </header>
+  </nav>
 
-  <!-- Intro Section -->
-  <section class="px-6 py-16 max-w-4xl mx-auto space-y-8 text-lg text-gray-700">
-    <p><strong>We’re building <span class="text-primary">WordSlasher</span></strong>, an educational app that combines mini-games with real language learning — currently supporting Arabic, Spanish, and Japanese.</p>
+  <!-- Hero Section -->
+  <section class="h-screen bg-[url('https://source.unsplash.com/1600x900/?help,charity')] bg-cover bg-center flex items-center justify-center px-6">
+    <div class="bg-white bg-opacity-80 p-10 rounded-xl text-center max-w-2xl mt-20">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-dark">Together, We Can Change Lives</h1>
+      <p class="text-lg text-gray-700 mb-6">
+        Our Goal: <strong class="goal-amount">100,000</strong><br>
+        <strong class="raised-amount">68,000 raised</strong> – <strong class="percentage-amount">60</strong> of the way there!<br>
+        Help us reach the finish line.
+      </p>
 
-    <h2 class="text-2xl font-bold text-dark">🎮 Learn by Playing</h2>
-    <p>Imagine slicing through words like Fruit Ninja — but instead of fruit, you're learning vocabulary, sentence-building, and pronunciation better and faster than Duolingo.</p>
-    <p>No ads. No paywalls. No pressure.<br>Just joyful learning through immersive gameplay.</p>
+      <!-- Main Progress Bar -->
+      <div class="w-full max-w-md mx-auto mt-6">
+        <div class="bg-gray-300 h-6 rounded-full overflow-hidden">
+          <div class="bg-primary h-full text-right pr-2 text-white text-sm font-bold rounded-full animate-pulse" style="width: 68%;">
+            <strong class="raised-amount"> R68,000</strong>
+          </div>
+        </div>
+        <p class="mt-2 text-gray-600"><strong class="percentage-amount">60</strong> raised</p>
+      </div>
 
-    <h2 class="text-2xl font-bold text-dark">🌱 What Makes WordSlasher Different?</h2>
-    <p>While big apps focus on streaks and gamified repetition, we’re focused on real comprehension — with beautiful design, cultural context, and games that make learning feel natural and exciting.</p>
-    <p>And we’re making the full demo <strong>100% free</strong>, because we believe education should never be locked behind a paywall.</p>
+      <a href="#fund" class="mt-4 px-6 py-3 bg-primary text-white rounded-xl shadow-md hover:bg-blue-600 transition inline-block">Fund Now</a>
+    </div>
+  </section>
 
-    <h2 class="text-2xl font-bold text-dark">💡 Why We’re Crowdfunding</h2>
-    <ul class="list-disc ml-6 space-y-1">
-      <li>💻 Polish and complete the full app</li>
-      <li>🧾 Cover basic living costs while we focus on development</li>
-      <li>🌍 Translate and expand into more languages, content, categories, books, worksheets & audio guides</li>
-    </ul>
+    <!-- About Section -->
+  <section id="about" class="py-20 px-6 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4 text-dark">About the Project</h2>
+      <p class="text-gray-700 text-lg">We’re building <strong>WordSlasher</strong>, an educational app that combines mini-games with real language learning — currently supporting Arabic, Spanish, and Japanese. We also want to expand and do more apps and books in the near future too.</p>
+    </div>
+  </section>
 
-    <h2 class="text-2xl font-bold text-dark">🎁 What You Get</h2>
-    <p>We're not selling the app — it'll always be free. Your support helps us:</p>
-    <ul class="list-disc ml-6 space-y-1">
-      <li>Keep development alive and independent</li>
-      <li>Put powerful learning tools in the hands of learners worldwide</li>
-      <li>Build something lasting and meaningful</li>
-    </ul>
+  <!-- Rewards Grid -->
+  <section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <h3 class="text-xl font-semibold text-primary">❤️ All Backers Get:</h3>
-    <ul class="list-disc ml-6 space-y-1">
-      <li>Your name/handle in the credits</li>
-      <li>Early access to updates and new content</li>
-      <li>Provide feedback and bug fixes</li>
-    </ul>
+      <!-- All Supporters -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-primary">
+        <h2 class="text-xl font-bold text-dark mb-2">Every Donation ❤️</h2>
+        <p class="text-gray-700">• Your name or handle added to the app credits<br>• Early updates and community shoutouts</p>
+      </div>
 
-    <h3 class="text-xl font-semibold text-primary">❤️❤️ Big Backer Rewards:</h3>
-    <ul class="list-disc ml-6 space-y-1">
-      <li>Feedback to make changes, fixes and improvements to the initial design</li>
-      <li>Suggest upgrades or additional languages you'd love to see — we’ll prioritize your request!</li>
-    </ul>
+      <!-- R100 -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-green-500">
+        <h2 class="text-xl font-bold text-dark mb-2">R100 — Live Demo Access (no ads)</h2>
+        <p class="text-gray-700">• Play the working demo online<br>• See progress as it happens</p>
+      </div>
 
-    <h2 class="text-2xl font-bold text-dark">🌍 Our Vision</h2>
-    <p>If this campaign succeeds, we’ll grow WordSlasher into:</p>
-    <ul class="list-disc ml-6 space-y-1">
-      <li>A multilingual platform for underrepresented languages</li>
-      <li>A series of educational tools (books, audio, worksheets)</li>
-      <li>A global community of learners who help each other thrive</li>
-    </ul>
+      <!-- R200 -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
+        <h2 class="text-xl font-bold text-dark mb-2">R200 — APK Download (no ads)</h2>
+        <p class="text-gray-700">• Download the Android APK<br>• Play offline + test features early</p>
+      </div>
 
-    <h2 class="text-2xl font-bold text-dark">🕹️ Try the Demo Ideas – Free, Right Now</h2>
-    <p>We’ve built a working prototype you can try today:<br>
-      <a href="https://github.com/abderoofyt/Mobile-Games" target="_blank" class="text-primary underline">👉 https://github.com/abderoofyt/Mobile-Games</a>
+      <!-- R400 -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500">
+        <h2 class="text-xl font-bold text-dark mb-2">R400 — Feedback Access</h2>
+        <p class="text-gray-700">• Submit feedback to improve the app<br>• Join our testers feedback group</p>
+      </div>
+      
+
+      <!-- R600 -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-purple-500">
+        <h2 class="text-xl font-bold text-dark mb-2">R600 — Suggest Upgrades</h2>
+        <p class="text-gray-700">• Suggest new features, UI ideas, or content<br>• Direct influence on development roadmap</p>
+      </div>
+
+      <!-- R1000 -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-gold">
+        <h2 class="text-xl font-bold text-dark mb-2">R1000+ — Beta Access</h2>
+        <p class="text-gray-700">• First access to closed beta<br>• Full unlocked app experience before launch<br>• Your feedback shapes the final release</p>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-10">
+      <p class="text-gray-600">All donations help us build something meaningful and lasting. Thank you for your support! We also coming up with ideas on how you can support us without any donations, but sharing, helping code or downloading the demo and playing with ads and giving feedback.</p>
+      <a href="#fund" class="mt-4 px-6 py-3 bg-primary text-white rounded-xl shadow-md hover:bg-blue-600 transition inline-block">Donate Now</a>
+  
+    
+    <!-- 🔸 Milestone Rewards -->
+    <h2 class="text-2xl font-bold text-dark text-center mt-20 mb-10">🏆 Milestone Unlocks</h2>
+    <p class="text-center text-gray-600 mb-6">Once funding milestones are met, these bonus rewards are unlocked for all eligible donors!</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Future Milestone: R500 — Google Playstore Download -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-gray-400">
+        <h3 class="text-xl font-bold text-dark mb-2">R500 — Google Playstore Download</h3>
+        <p class="text-gray-700">
+          • Get a special Play Store download code<br>
+          • Full unlocked version on Android<br>
+          • Includes future updates and improvements<br>
+          • Makes official publishing fees possible 🙌
+        </p>
+      </div>
+
+      <!-- R1900 -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4" style="border-color: #FFD700;">
+        <h3 class="text-xl font-bold text-dark mb-2">R1900 — iOS Beta Access</h3>
+        <p class="text-gray-700">
+          • +R400 for iOS download<br>
+          • Full unlocked app<br>
+          • Direct feedback influence<br>
+          • Helps cover Apple developer fees 🙏
+        </p>
+      </div>
+
+      <!-- Future Milestone Example -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-green-400">
+        <h3 class="text-xl font-bold text-dark mb-2">R10,000 — Cross-platform Progress/Data sync</h3>
+        <p class="text-gray-700">
+          • After Gamifying wordslasher, save progress.<br>
+          • Sync Saved data or Game Progress across platforms to continue where you left off<br>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Outro -->
+    <div class="text-center mt-10">
+      <p class="text-gray-600 mb-4">Support a specific feature, or help us unlock even more learning magic 💫</p>
+      <a href="#fund" class="px-6 py-3 bg-primary text-white rounded-xl shadow-md hover:bg-blue-600 transition inline-block">
+        Fund a Feature
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Monthly Target Progress Bar -->
+<section class="bg-white py-10 px-6">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold text-dark mb-4 text-center">Feature Target Progress</h2>
+    <p class="text-gray-600 mb-8 text-center">Tracking our <strong class="goal-amount">100,000</strong> goal across 3 months. See how we're doing each month.</p>
+</br>
+    <!-- Month 1 -->
+    <div class="mb-6">
+      <p class="text-left font-semibold text-gray-700 mb-1">Playstore: Goal R500 — <span class="text-gray-600">0</p>
+      <div class="bg-gray-200 rounded-full h-6 overflow-hidden">
+        <div class="bg-gray-500 h-6 text-white text-sm flex items-center justify-end pr-2" style="width: 2%;">
+          R12,000
+        </div>
+      </div>
+    </div>
+
+    <!-- Month 2 -->
+    <div class="mb-6">
+      <p class="text-left font-semibold text-gray-700 mb-1">iOS: Goal R2,000</p>
+      <div class="bg-gray-200 rounded-full h-6 overflow-hidden">
+        <div class="bg-yellow-400 h-6 text-white text-sm flex items-center justify-end pr-2" style="width: 0%;">
+          R23,000
+        </div>
+      </div>
+    </div>
+
+    <!-- Month 3 -->
+    <div class="mb-6">
+      <p class="text-left font-semibold text-gray-700 mb-1">Cross-platform Progress: Goal R10,000</p>
+      <div class="bg-gray-200 rounded-full h-6 overflow-hidden">
+        <div class="bg-green-500 h-6 text-white text-sm flex items-center justify-end pr-2" style="width: 0%;">
+          R33,000
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Month 4 -->
+    <div class="mb-6">
+      <p class="text-left font-semibold text-gray-700 mb-1">Launch Party: Goal R33,000</p>
+      <div class="bg-gray-200 rounded-full h-6 overflow-hidden">
+        <div class="bg-green-500 h-6 text-white text-sm flex items-center justify-end pr-2" style="width: 0%;">
+          R33,000
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Cumulative Progress -->
+
+    <h2 class="text-2xl font-bold text-dark mb-4 text-center">📅 Monthly Target Progress</h2>
+    <p class="text-gray-600 mb-8 text-center">Tracking our <strong class="goal-amount">100,000</strong> goal across 3 months. See how we're doing each month.</p>
+    <div class="flex w-full bg-gray-200 rounded-full overflow-hidden text-xs font-medium text-white text-center">
+    <div class="bg-gray-400 h-8 flex-1 flex items-center justify-center" style="width: 30%;">
+      Month 1: R34,000
+    </div>
+    <div class="bg-yellow-400 h-8 flex-1 flex items-center justify-center" style="width: 70%;">
+      Month 2: R67,000
+    </div>
+    <div class="bg-green-500 h-8 flex-1 flex items-center justify-center" style="width: 100%;">
+      Month 3: R100,000
+    </div>
+  </div>
+    <div class="mt-10">
+      <div class="bg-gray-300 rounded-full h-6 overflow-hidden">
+        <div class="bg-blue-600 h-6 text-white text-sm flex items-center justify-end pr-2" style="width: 2%;">
+         <strong class="raised-amount">100,000</strong> / <strong class="goal-amount">100,000</strong>
+        </div>
+      </div>
+      <p class="mt-2 text-sm text-center text-gray-500">Overall: <strong class="percentage-amount">60</strong> of total goal reached</p>
+      <p class="mt-2 text-sm text-center text-gray-500">Live progress — goal: R33K/month for 3 months</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Banking Details Section -->
+<section class="py-20 px-6 bg-gray-100" id="fund">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4 text-dark">💳 Direct Bank Donations</h2>
+    <p class="mb-8 text-gray-700">Prefer to donate via bank transfer? Use the details below or scan to pay.</p>
+
+    <div class="bg-white p-8 rounded-xl shadow-md flex flex-col lg:flex-row items-center justify-between gap-8">
+      
+      <!-- Bank Image -->
+      <div class="flex-shrink-0">
+        <img src="Capitec-Logo.jpg" alt="Capitec Bank Logo" class="w-48 h-auto object-contain" />
+      </div>
+
+      <!-- Bank Details -->
+      <div class="text-left space-y-3 text-gray-700 text-base lg:flex-1">
+        <p><strong>Bank Name:</strong> Capitec Bank</p>
+        <p><strong>Account Name:</strong> Mr J Abderoof</p>
+        <p><strong>Account Number:</strong> 1543062987</p>
+        <p><strong>Branch Code:</strong> 470010</p>
+        <p><strong>Reference:</strong> jabderoofyt@gmail.com</p>
+      </div>
+
+      <!-- QR Code -->
+      <div class="flex-shrink-0">
+        <img src="payme.jpeg" alt="Scan to Pay QR Code" class="w-40 h-40 object-contain" />
+        <p class="mt-2 text-sm text-gray-500 text-center">Scan to pay via your banking app</p>
+        <a href="https://pay.capitecbank.co.za/payme/Z5QLJF"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+          💸 Donate via Capitec
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+<section class="py-20 px-6 bg-white border-t border-gray-200">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-bold text-dark mb-4">📩 Contact Us</h2>
+    <p class="text-gray-700 mb-8">
+      Have any questions or concerns about donating? Feel free to reach out — we’ll be happy to assist you.
     </p>
 
-    <h2 class="text-2xl font-bold text-dark">🙌 Help Us Build a World of Learning</h2>
-    <p>We believe language breaks barriers — and that games can make that learning joyful for everyone, everywhere.</p>
-    <p>If you’re in a place to donate — even a little goes a long way.<br>
-    If you can’t give, please share the project, try the demo, or send us feedback.</p>
+    <div class="grid md:grid-cols-2 gap-6 text-left">
+      <!-- Contact: J Abderoof -->
+      <div class="bg-gray-100 p-6 rounded-xl shadow-md space-y-3">
+        <p><strong>Name:</strong> J Abderoof</p>
+        <p><strong>Email:</strong> <a href="mailto:junaid.abderoof@gmail.com" class="text-primary hover:underline">jabderoofyt@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+27814998598" class="text-primary hover:underline">+27 81 499 8598</a></p>
+        <a href="https://wa.me/27814998598" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded shadow">
+          💬 Message on WhatsApp
+        </a>
+      </div>
 
-    <p class="font-semibold text-xl text-primary">Let’s make learning fun again. Let’s build WordSlasher.</p>
-  </section>
-
-  <!-- Social Media -->
-  <section class="text-center py-16 px-6 bg-gray-100">
-    <h2 class="text-2xl font-bold mb-6 text-dark">📣 Connect With Us</h2>
-    <div class="flex justify-center gap-6 flex-wrap">
-      <a href="https://facebook.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-12 h-12 hover:scale-110 transition" />
-      </a>
-      <a href="https://instagram.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-12 h-12 hover:scale-110 transition" />
-      </a>
-      <a href="https://twitter.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="w-12 h-12 hover:scale-110 transition" />
-      </a>
-      <a href="https://youtube.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="w-12 h-12 hover:scale-110 transition" />
-      </a>
+      <!-- Contact: Shamika Johnson -->
+      <div class="bg-gray-100 p-6 rounded-xl shadow-md space-y-3">
+        <p><strong>Name:</strong> S Johnson</p>
+        <p><strong>Email:</strong> <a href="mailto:shamika12johnson@gmail.com" class="text-primary hover:underline">sjabderoof@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+27611550620" class="text-primary hover:underline">+27 61 155 0620</a></p>
+        <a href="https://wa.me/27763293603" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded shadow">
+          💬 Message on WhatsApp
+        </a>
+      </div>
     </div>
-  </section>
+
+    <p class="mt-10 text-sm text-gray-500 text-center">
+      We usually respond within 24–48 hours. Thanks for supporting WordSlasher!
+    </p>
+  </div>
+</section>
+
+
 
   <!-- Footer -->
-  <footer class="bg-dark text-white py-8 text-center">
-    <a href="index.html" class="text-primary underline hover:text-blue-300">← Back to Home</a>
-    <p class="mt-2 text-sm text-gray-400">&copy; 2025 WordSlasher by HopeFund. All rights reserved.</p>
+  <footer class="bg-dark text-white py-10 text-center">
+    <p class="mb-2">&copy; 2025 WordSlasher Funds. All rights reserved.</p>
   </footer>
+  
 
 </body>
+<script>
+  const raised = 1500; // New amount
+  const goal = 100000; // New goal amount
+
+  // Calculate percent based on goal
+  const percent = Math.round((raised / goal) * 100);
+
+  // Format the raised amount text
+  const formattedRaised = "R" + raised.toLocaleString() + " raised";
+
+  // Format the goal amount text
+  const formattedGoal = "R" + goal.toLocaleString();
+
+  // Update all elements with class 'raised-amount'
+  const raisedElements = document.querySelectorAll(".raised-amount");
+  raisedElements.forEach(el => {
+    el.textContent = formattedRaised;
+  });
+
+  // Update all elements with class 'goal-amount'
+  const goalElements = document.querySelectorAll(".goal-amount");
+  goalElements.forEach(el => {
+    el.textContent = formattedGoal;
+  });
+
+  // Update all elements with class 'percentage-amount'
+  const percentageElements = document.querySelectorAll(".percentage-amount");
+  percentageElements.forEach(el => {
+    el.textContent = percent + "%";
+  });
+
+  // Update progress bar width if element exists
+  const progressBar = document.querySelector(".bg-primary");
+  if (progressBar) {
+    progressBar.style.width = percent + "%";
+  }
+</script>
+
+
 </html>
